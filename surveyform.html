@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey_form_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      This survey will help us improve our platform. Thank you for helping us!
+    </p>
+
+
+    <!----- FORM ----->
+    <form class="" action="index.html" method="post" id="survey-form">
+
+
+      <!----- name, email, and age fields ----->
+      <fieldset>
+        <label for="name-label">Name <input type="text" name="" value="" id="name-label" placeholder="Enetr your name" equired></label>
+        <label for="email-label">Email <input type="email" name="" value="" id="email-label" placeholder="johndoe@me.com" required></label>
+        <label for="age-label">Age <input type="number" name="" value="" id="age-label" min="18" max="120" placeholder="Enter your age"></label>
+      </fieldset>
+
+
+      <!----- select role field ----->
+      <fieldset>
+        <label for="current-role">What is your current role?
+          <select class="" name="" id="current-role">
+            <option value="">(Select One)</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </label>
+      </fieldset>
+
+
+      <!----- recommendation field ----->
+      <fieldset>
+        <label for="radio-one"><input type="radio" name="recommendation-type" value="" id="radio-one" class="inline"> Radio One</label>
+        <label for="radio-two"><input type="radio" name="recommendation-type" value="" id="radio-two" class="inline"> Radio Two</label>
+        <label for="improve">What would you like us to improve? (Check all that apply)
+          <input type="checkbox" name="" value="" id="improve" class="inline">Improvement 1
+          <input type="checkbox" name="" value="" id="improve" class="inline">Improvement 2
+          <input type="checkbox" name="" value="" id="improve" class="inline">Improvement 3
+        </label>
+      </fieldset>
+
+
+      <!----- additional comments ----->
+      <fieldset>
+        <label for="addtional-comments">Any additional comments? ... <textarea name="addtional-comments" rows="8" cols="80" placeholder="I would like to see ..."></textarea></label>
+      </fieldset>
+
+
+      <!----- submit field ----->
+      <input type="submit" name="" value="Submit" id="submit">
+    </form>
+  </body>
+</html>
